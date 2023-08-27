@@ -8,3 +8,5 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 
 ### Get data set
 อันดับแรก ใส่ลิงค์ api ของดาต้าเพื่อเรียกข้อมูลเข้ามาใน Power BI 
+
+![alt text](pm25img/Screenshot 2023-08-27 162316.png "img 1")
