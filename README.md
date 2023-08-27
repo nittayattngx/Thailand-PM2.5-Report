@@ -24,7 +24,14 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 
 #### Column ที่นำมาใช้งาน
 
-⋅⋅* stationsName รายชื่อของสถานีที่วัดคุณภาพอากาศ
-
+1. stationsName: รายชื่อของสถานีที่วัดคุณภาพอากาศ
+2. พื้นที่: พื้นที่ของสถานี
+3. province: จังหวัดของสถานี
+4. lat: ละติจูดของสถานี
+5. long: ลองจิจูดของสถานี
+6. stations.AQILast.date: วันล่าสุดที่วัดคุณภาพอากาศ
+7. stations.AQILast.PM25.color_id: ระดับคุณภาพอากาศ 0-5 โดย 0 คืออากาศดี 5 คืออากาศเป็นอันตราย
+8. ค่าPM: ค่า PM 2.5 ที่วัดได้
+9. stations.AQILast.AQI.param: เป็น column ที่ชี้ว่าฝุ่นในอากาศเป็นประเภทไหน
 
 
