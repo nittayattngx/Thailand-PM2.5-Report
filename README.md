@@ -12,16 +12,15 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 อันดับแรก ใส่ลิงค์ api ของดาต้าเพื่อเรียกข้อมูลเข้ามาใน Power BI
 
 <p align="center">
-  &nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162316.png" width = "500"/>
+&nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162316.png" width = "500"/>
 </p>
-
-![alt text](https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162316.png "img 1")
-
 
 
 ดาต้าที่ได้มามี column ที่เก็บข้อมูลเยอะมาก ดูได้จากเจ้า entity นี้ที่แสดง column ต่าง ๆ 
 
-![alt text](https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162439.png "img 2")
+<p align="center">
+&nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162439.png " width = "500"/)
+</p>
 
 
 
@@ -29,8 +28,9 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 
 สำรวจดาต้าแล้ววางแผนว่าจะใช้อะไรบ้างในการสร้างแดชบอร์ด จากนั้นทำการลบ column ที่ไม่ใช้ทั้งหมดทิ้งไป
 
-![alt text](https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20163235.png "img 3")
-
+<p align="center">
+&nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20163235.png " width = "500"/)
+</p>
 
 
 #### Column ที่นำมาใช้งาน
