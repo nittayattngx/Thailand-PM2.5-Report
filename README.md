@@ -88,3 +88,10 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 </p>
 
 - <p><b>5 อันดับที่พบPM 2.5 มากที่สุด</b>ใช้ table ในการแสดงค่าโดยเลือก ค่าPM2.5, จังหวัด, พื้นที่ และใช้ค่าPM2.5 ฟิลเตอร์ ค่าที่มากที่สุด 5 อันดับ</p>
+
+
+
+&emsp; project ตัวนี้ก็สิ้นสุดที่กระบวนการนี้ ปิดท้ายด้วยการใช้งานแดชบอร์ดเล็ก ๆ น้อย ๆ โดยฟิลเตอร์ ภาคเหนือ และเลือกระดับ 2 
+<p align = "center">
+  &nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-28%20141413.png" width = "500">
+</p>
