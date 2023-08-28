@@ -2,21 +2,21 @@
 Power BI dashboard for reporting the daily PM2.5 in Thailand
 
 ## About
-แดชบอร์ดนี้ทำขึ้นมาเพื่อเป็นการฝึกใช้ Power BI ในการทำ data visualize โดยหยิบข้อมูลที่มีการอัพเดตตลอดเวลาอย่างรายงานค่าฝุ่น (PM 2.5) ในประเทศไทยนี้มาทดลองสร้างแดชบอร์ดจริงจังครั้งแรก
+<p>&nbsp แดชบอร์ดนี้ทำขึ้นมาเพื่อเป็นการฝึกใช้ Power BI ในการทำ data visualize โดยหยิบข้อมูลที่มีการอัพเดตตลอดเวลาอย่างรายงานค่าฝุ่น (PM 2.5) ในประเทศไทยนี้มาทดลองสร้างแดชบอร์ดจริงจังครั้งแรก</p>
 
 [Data set ได้มาจาก open data.go.th](https://opendata.onde.go.th/en/dataset/14-pm-25) 
 
 
 
 ### Get data set
-อันดับแรก ใส่ลิงค์ api ของดาต้าเพื่อเรียกข้อมูลเข้ามาใน Power BI
+<p>&nbspอันดับแรก ใส่ลิงค์ api ของดาต้าเพื่อเรียกข้อมูลเข้ามาใน Power BI </p>
 
 <p align="center">
 &nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162316.png" width = "500"/>
 </p>
 
 
-ดาต้าที่ได้มามี column ที่เก็บข้อมูลเยอะมาก ดูได้จากเจ้า entity นี้ที่แสดง column ต่าง ๆ 
+<p>&nbspดาต้าที่ได้มามี column ที่เก็บข้อมูลเยอะมาก ดูได้จากเจ้า entity นี้ที่แสดง column ต่าง ๆ </p>
 
 <p align="center">
 &nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162439.png " width = "500"/)
@@ -26,7 +26,7 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 
 ### Cleaning data
 
-สำรวจดาต้าแล้ววางแผนว่าจะใช้อะไรบ้างในการสร้างแดชบอร์ด จากนั้นทำการลบ column ที่ไม่ใช้ทั้งหมดทิ้งไป
+<p>&nbspสำรวจดาต้าแล้ววางแผนว่าจะใช้อะไรบ้างในการสร้างแดชบอร์ด จากนั้นทำการลบ column ที่ไม่ใช้ทั้งหมดทิ้งไป </p>
 
 <p align="center">
 &nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20163235.png " width = "500"/)
