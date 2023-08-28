@@ -11,7 +11,7 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 ### Get data set
 อันดับแรก ใส่ลิงค์ api ของดาต้าเพื่อเรียกข้อมูลเข้ามาใน Power BI 
 
-![alt text](https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162316.png "img 1")
+![alt text](https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20162316.png width = "100" "img 1")
 
 
 
