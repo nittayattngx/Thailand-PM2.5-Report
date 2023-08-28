@@ -41,7 +41,7 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 -  lat: ละติจูดของสถานี
 -  long: ลองจิจูดของสถานี
 -  stations.AQILast.date: วันล่าสุดที่วัดคุณภาพอากาศ
--  stations.AQILast.PM25.color_id: ระดับคุณภาพอากาศ 0-5 โดย 0 คืออากาศดี 5 คืออากาศเป็นอันตราย
+-  stations.AQILast.PM25.color_id: ระดับคุณภาพอากาศ 0-5 โดย 0 คืออากาศดี 5 คืออากาศเป็นอันตราย ซึ่งนำข้อมูลจาก ค่าPM มาเป็นตัวแบ่ง
 -  ค่าPM: ค่า PM 2.5 ที่วัดได้
 -  stations.AQILast.AQI.param: เป็น column ที่ชี้ว่าฝุ่นในอากาศเป็นประเภทไหน
 
@@ -68,11 +68,23 @@ Power BI dashboard for reporting the daily PM2.5 in Thailand
 <p>&emsp; สร้างแดชบอร์ดรายงานค่าฝุ่น PM 2.5 รายวัน</p> 
 
 <p align = "center">
-   &nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-27%20163738.png" width = "500"/>
+   &nbsp;<img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-08-28%20132732.png" width = "500"/>
 </p>
 
 <p>
 &emsp; อธิบายแต่ละส่วนในแดชบอร์ด
 </p>
 
-- <p><b>PM 2.5 ตามภูมิภาค</b></p>
+- <p><b>PM 2.5 ตามภูมิภาค</b> ใช้ stacked bar chart ในการแสดงค่าเฉลี่ย PM2.5 ในแต่ละภูมิภาคและจัดเรียงตามภูมิภาคที่มีค่าเฉลี่ย PM.2.5 มากที่สุดไปหาน้อยสุด</p>
+- <p><b>สัดส่วนระดับ PM 2.5</b> ใช้ pie chart แสดงสัดส่วนของระดับ PM 2.5 ตั้งแต่ระดับ 1 - 5 (หรือ 1 - ระดับสูงสุดในตอนนี้) ดูภาพรวมว่าส่วนใหญ่ระดับฝุ่นในอากาศเป็นยังไง โดยใช้ stationsName มา count(นับจำนวนสถานี)เป็น value และใช้ stations.AQILast.PM25.color_id ในการแบ่งสัดส่วนของ chart</p>
+- <p><b>ระดับ PM 2.5</b> ตรงส่วนนี้ใช้ slicer แบบ tile ทำงานร่วมกับ ArcGIS Maps เจ้า slicer มีไว้เลือกระดับPM (1-5 หรือ 1 - ค่าPMสูงสุดตอนนั้น) และ maps จะ plot สถานีที่เข้าเงื่อนไขทั้งหมด ใช้ lat, long ในการระบุตำแหน่ง</p>
+- <p><b>วันที่</b> แสดงวันที่ของ data set ที่รายงานอยู่ตอนนี้โดย stations.AQILast.date </p>
+- <p><b>จังหวัด</b> ใช้ slicer ในการแสดงทุกจังหวัดแบบ dropdown โดยใช้ province จาก data set ตัวแรกที่เราดึง api มา</p>
+- <p><b>การ์ดแสดงค่าPM 2.5</b> แสดงค่า PM 2.5 ที่มากที่สุด และ น้อยที่สุด พร้อมทั้งระดับและจังหวัดดังกล่าว โดยใช้ ค่าPM, stations.AQILast.PM25.color_id, province ทำงานร่วมกัน</p>
+&emsp; ในภาพอาจจะเห็นว่าค่า PM 2.5 มากที่สุดตอนนี้(28/8/2023) คือ 31 และอยู่ใน ระดับ 3 เท่านั้น แต่ในเดือนเมษายนปีนี้ (ข้อมูลจากไฟล์ภาพ) ประเทศไทยเคยมีค่า PM 2.5 สูงถึง 241 ระดับ 5 เป็นระดับสูงสุดของการจัดระดับนั่นเอง (ช่วงนั้นเป็นช่วงที่ค่า PM 2.5 ในประเทศไทยเยอะมาก เป็นเหตุผลที่ทำให้เราเลือก data set ชุดนี้ทำ project ตัวนี้ด้วย)
+
+<p align = "center">
+  &nbsp; <img src = "https://github.com/nittayattngx/Thailand-PM2.5-Report/blob/main/pm25img/Screenshot%202023-04-15%20150719.png" width = "500"/>
+</p>
+
+- <p><b>5 อันดับที่พบPM 2.5 มากที่สุด</b>ใช้ table ในการแสดงค่าโดยเลือก ค่าPM2.5, จังหวัด, พื้นที่ และใช้ค่าPM2.5 ฟิลเตอร์ ค่าที่มากที่สุด 5 อันดับ</p>
